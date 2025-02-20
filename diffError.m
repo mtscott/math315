@@ -13,6 +13,11 @@ end
 
 figure(1);
 semilogx(h,error,h,error, 'o'); 
+xlabel('step size, h')
+ylabel('Abs. Err.')
 
 figure(2);
 loglog(h,error,h,error,'o');
+xline(sqrt(eps), '--b');
+xlabel('step size, h')
+ylabel('Abs. Err.')
